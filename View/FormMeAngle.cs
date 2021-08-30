@@ -10,10 +10,11 @@ using System.Windows.Forms;
 
 namespace View
 {
-    public partial class Form1 : Form
+    public partial class FormMeAngle : Form
     {
-        public Form1()
+        public FormMeAngle()
         {
+            this.TopMost = true;
             InitializeComponent();
         }
     }
