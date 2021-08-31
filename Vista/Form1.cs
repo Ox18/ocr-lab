@@ -23,6 +23,8 @@ namespace Vista
 
             this.barForm = new BarForm();
             barForm.Show();
+            barForm.Visible = false;
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -55,6 +57,18 @@ namespace Vista
         private void checkAutomatizedAngle_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox1_Click(object sender, EventArgs e)
+        {
+            if (checkBoxBarForm.Checked)
+            {
+                this.barForm.Visible = true;
+            }
+            else
+            {
+                this.barForm.Visible = false;
+            }
         }
     }
 }

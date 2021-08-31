@@ -32,7 +32,7 @@ namespace Vista
 
         public LastAngleForm()
         {
-
+            this.ShowInTaskbar = false;
             this.TopMost = true;
             InitializeComponent();
         }

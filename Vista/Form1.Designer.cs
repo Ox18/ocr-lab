@@ -34,7 +34,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.txtTitleMiAngulo = new System.Windows.Forms.Label();
             this.checkAutomatizedAngle = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBarForm = new System.Windows.Forms.CheckBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -81,16 +81,17 @@
             this.checkAutomatizedAngle.CheckedChanged += new System.EventHandler(this.checkAutomatizedAngle_CheckedChanged);
             this.checkAutomatizedAngle.Click += new System.EventHandler(this.checkAutomatizedAngle_Click);
             // 
-            // checkBox1
+            // checkBoxBarForm
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Location = new System.Drawing.Point(22, 316);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(81, 17);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Barra poder";
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBoxBarForm.AutoSize = true;
+            this.checkBoxBarForm.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxBarForm.Location = new System.Drawing.Point(22, 316);
+            this.checkBoxBarForm.Name = "checkBoxBarForm";
+            this.checkBoxBarForm.Size = new System.Drawing.Size(81, 17);
+            this.checkBoxBarForm.TabIndex = 3;
+            this.checkBoxBarForm.Text = "Barra poder";
+            this.checkBoxBarForm.UseVisualStyleBackColor = false;
+            this.checkBoxBarForm.Click += new System.EventHandler(this.checkBox1_Click);
             // 
             // comboBox1
             // 
@@ -118,7 +119,7 @@
             this.ClientSize = new System.Drawing.Size(247, 348);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.checkBoxBarForm);
             this.Controls.Add(this.checkAutomatizedAngle);
             this.Controls.Add(this.txtTitleMiAngulo);
             this.Controls.Add(this.lastAngle);
@@ -136,7 +137,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label txtTitleMiAngulo;
         private System.Windows.Forms.CheckBox checkAutomatizedAngle;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBoxBarForm;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
     }

@@ -35,6 +35,7 @@ namespace Vista
 
         public BarForm()
         {
+            this.ShowInTaskbar = false;
             this.TopMost = true;
             InitializeComponent();
         }
