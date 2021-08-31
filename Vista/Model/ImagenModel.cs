@@ -25,7 +25,11 @@ namespace Vista.Model
                 using (Bitmap bm = new Bitmap(img))
                 {
                     //Instanciamos el TesseractEngine declarado arriba !
-                    engine = new TesseractEngine(@"C:\Sistema\tessdata", "eng", EngineMode.Default);
+                    var CurrentDirectory = Directory.GetCurrentDirectory();
+                    Console.WriteLine(CurrentDirectory);
+                    String path = CurrentDirectory + @"\tessdata";
+                    engine = new TesseractEngine(path, "eng", EngineMode.Default);
+                    //engine = new TesseractEngine(@"C:\Sistema\tessdata", "eng", EngineMode.Default);
                     engine.DefaultPageSegMode = PageSegMode.SingleBlock;
                     Tesseract.Page p = engine.Process(bm);
                     text = p.GetText().Trim().ToUpper().Replace(" ", "");
